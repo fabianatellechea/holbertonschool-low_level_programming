@@ -1,15 +1,10 @@
-#include <stdio.h>
-
-/**
-*main - prints a string followed by a new line.
-*
-Return: 0.
-*/
-
-int main(void)
+#include<studio.h>
+/** 
+ * * main - Prints a Sting followed by a new line.
+ * *
+ * * Return: 0.
+ * */
+int main(void) 
 { puts("\"Programming is like building a multilingual puzzle");
-
-  return (0);
+return: 0;
 }
-
-
