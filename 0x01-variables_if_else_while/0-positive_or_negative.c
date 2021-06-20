@@ -16,20 +16,16 @@ n = rand() - RAND_MAX / 2;
 
 		If (n > 0)
 
-{Printf(“is positive\n")
-
+{Printf(“is positive\n");
 }
 
 Else if (n = 0)
 
-{Printf(“is zero\n”)
-
-
+{Printf(“is zero\n”);
+}
 
 Else
-
-{Printf(“is negative\n")
-
+{Printf(“is negative\n");
 }
 
 		return (0);
