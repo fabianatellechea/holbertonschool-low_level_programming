@@ -16,8 +16,11 @@ int main(void)
 if (n % 10 > 5)
 { printf("Last digit of n is %i and is greater than 5\n", (n % 10));
 }
-
-	
-	
-	
-	return (0);}
+else if (n % 10 == 0)
+{ printf("Last digit of n is %i and is zero\n", (n % 10));
+}
+else
+{ printf("Last digit of n is %i and is less than 6 not 0\n", (n % 10));
+}
+	return (0);
+	}
