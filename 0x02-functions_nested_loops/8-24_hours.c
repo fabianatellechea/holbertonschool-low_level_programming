@@ -5,8 +5,20 @@
  * Return: 0.
  */
 void jack_bauer(void)
-{ int n;
-	while (n = 00:00; n <= 23:59; n++)
-		_putchar(n);
+{ int h = 0, m;
+
+	while (h < 24, h++)
+	{ int m = 0;
+		while (m < 60, m++)
+		{
+		_putchar((h / 10) + '0');
+		_putchar((h % 10) + '0');
+		_putchar(':');
+		_putchar((m / 10) + '0');
+		_putchar((m % 10) + '0');
+		_putchar('\n');
+		}
+	}
+
 }
 
