@@ -4,12 +4,12 @@
  *
  * Return: value of an inter.
  */
-int _abs(int)
-{ int v;
+int _abs(int v)
+{
 	if (v >= 0)
-	{ return (1) }
+	{ return (1); }
 	else
-	{ return (-1) }
+	{ return (-1); }
 }
 
 
