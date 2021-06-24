@@ -7,11 +7,9 @@
 
 int print_last_digit(int v)
 {
-
+	if (v % 10 > 0)
+	{
 	_putchar(v % 10 + '0');
 		
-		if (v % 10 > 0)
-		{ return (v % 10); }
-		else
-		{ return (-v % 10); }
+	 return (v % 10); }
 }
