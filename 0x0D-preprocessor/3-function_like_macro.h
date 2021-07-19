@@ -1,4 +1,4 @@
 #ifndef FUNCTION_LIKE_H
 #define FUNCTION_LIKE_H
-#define
+#define ABS(X) ((X < 0) ? (-X):(X))
 #endif
