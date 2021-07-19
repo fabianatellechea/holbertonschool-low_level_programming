@@ -1,4 +1,4 @@
-#ifndef FUNCTION_LIKE
-#define FUNCTION_LIKE
+#ifndef FUNCTION_LIKE_H
+#define FUNCTION_LIKE_H
 #define
 #endif
