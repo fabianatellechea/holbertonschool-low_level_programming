@@ -17,36 +17,33 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	}
 
-	if (text_content == NULL)
-	{
-		o = open(filename, O_CREAT, 0600);
-		if (o == -1)
-			return (-1);
-		return (1);
-	}
-
-	else
+	if (text_content)
 	{
 		for (l = 0; text_content[l] != '\0'; l++)
 			;
-
+	}
+	else
+	{
+		o = open(filename, O_CREAT, 0600);
+		return (1);
 	}
 
 	if (filename)
 	{
-		m = malloc(l * sizeof(char));
+		m = malloc(sizeof(char) * l);
 		o = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
 		x = write(o, text_content, l);
 		return (1);
-
-		if (o == -1 || x == -1)
-			return (-1);
 	}
 	else
 	{
 		return (-1);
 	}
 
+	if (o == -1 || x == -1)
+	{
+		return (-1);
+}
 	free(m);
 	close(o);
 	return (1);
