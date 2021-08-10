@@ -33,6 +33,11 @@ int create_file(const char *filename, char *text_content)
 		m = malloc(sizeof(char) * l);
 		o = open(filename, O_CREAT, O_TRUNC, O_WRONLY, 600);
 		x = write(o, text_content, l);
+		return (1);
+	}
+	else
+	{
+		return (-1);
 	}
 
 	if (o == -1 || x == -1)
