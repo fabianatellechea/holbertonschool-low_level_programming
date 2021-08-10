@@ -21,12 +21,12 @@ int create_file(const char *filename, char *text_content)
 	{
 		o = open(filename, O_CREAT, 0600);
 
-		return (1);
 	}
 	else
 	{
 		for (l = 0; text_content[l] != '\0'; l++)
 			;
+
 	}
 
 	if (filename)
