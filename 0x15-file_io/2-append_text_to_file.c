@@ -2,8 +2,8 @@
 
 /**
   *append_text_to_file - function that appends text at the end of a file.
-  *@filename:the name of the file to create
-  *@text_content:is a NULL terminated string to write to the file
+  *@filename: the name of the file to create
+  *@text_content: is a NULL terminated string to write to the file
   *Return: 1 on success, -1 on failure
   */
 
@@ -31,7 +31,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (filename)
 	{
 		m = malloc(sizeof(char) * l);
-		o = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
+		o = open(filename, O_APPEND | O_WRONLY);
 		x = write(o, text_content, l);
 		return (1);
 	}
