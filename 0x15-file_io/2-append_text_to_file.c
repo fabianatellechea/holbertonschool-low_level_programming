@@ -10,7 +10,6 @@
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int o, x, l;
-	char *m;
 
 	if (filename == NULL)
 	{
@@ -25,26 +24,18 @@ int append_text_to_file(const char *filename, char *text_content)
 	else
 	{
 		o = open(filename, O_CREAT, 0600);
-		return (1);
 	}
 
 	if (filename)
 	{
-		m = malloc(sizeof(char) * l);
 		o = open(filename, O_APPEND | O_WRONLY);
 		x = write(o, text_content, l);
-		return (1);
-	}
-	else
-	{
-		return (-1);
+
+
+		if (o == -1 || x == -1)
+			return (-1);
 	}
 
-	if (o == -1 || x == -1)
-	{
-		return (-1);
-}
-	free(m);
 	close(o);
 	return (1);
 }
