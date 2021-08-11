@@ -31,17 +31,12 @@ int create_file(const char *filename, char *text_content)
 	{
 		o = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
 		x = write(o, text_content, l);
-		return (1);
-	}
-	else
-	{
-		return (-1);
-	}
 
-	if (o == -1 || x == -1)
-	{
-		return (-1);
-}
+
+		if (o == -1 || x == -1)
+
+			return (-1);
+	}
 	close(o);
 	return (1);
 }
