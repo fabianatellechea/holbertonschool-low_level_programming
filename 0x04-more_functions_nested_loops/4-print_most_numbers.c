@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
   *print_most_numbers - function that prints the numbers, from 0 to 9
   *
@@ -7,16 +7,18 @@
 
 void print_most_numbers(void)
 {
-	int i;
+	int i = 48;
 
-	if (i <= 9)
+	while (i <= 57)
 	{
-		if (i != 2 || i != 4)
+		if (i != 50 && i != 52)
 		{
 			_putchar (i);
 		}
+
 		i++;
 	}
+
 	_putchar ('\n');
 }
 
