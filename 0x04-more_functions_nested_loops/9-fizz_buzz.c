@@ -1,4 +1,4 @@
-#include "main.h"
+#include "stdio.h"
 /**
   *main - Fizz Buzz
   *Return: 0
@@ -18,9 +18,8 @@ int main(void)
 			printf("FizzBuzz");
 		else
 			printf("%i", a);
-		if (i < 100)
-			printf(" ");
+
+	printf(" ");
 	}
 	printf("\n");
-	return (0);
 }
