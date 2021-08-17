@@ -19,7 +19,6 @@ int main(void)
 			printf("Fizz");
 		else
 		{
-	
 			printf("%i", i);
 		}
 		if (i < 100)
