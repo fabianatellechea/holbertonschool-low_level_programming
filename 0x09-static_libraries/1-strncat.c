@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
   *_strncat -  concatenates a string at the end of the other.
   *@dest: char1
