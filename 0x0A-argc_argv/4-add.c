@@ -9,8 +9,6 @@
 
 int main(int argc, char *argv[])
 {
-	int main(int argc, char *argv[])
-{
 	int num, dig, sum = 0;
 
 	for (num = 1; num < argc; num++)
