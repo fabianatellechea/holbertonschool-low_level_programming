@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stddef.h>
+#include <stdlib.h>
+
 /**
 * string_nconcat -you can do it
 * @s1: fuck yeah
