@@ -1,12 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - blabla
+ * main - main
  *
- *@argc: blablal
- *@argv: blablal
+ *@argc: argvc
+ *@argv: argv
  *
- * Return: blabla
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
