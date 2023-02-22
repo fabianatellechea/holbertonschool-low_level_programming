@@ -1,10 +1,12 @@
 CC=gcc
-SRC= main.c school.c
+SRC= $(foo1) $(foo2)
 foo := main.o school.o
+foo1 := school.c
+foo2 := main.c
 OBJ= $(foo:%.o=%.c)
 NAME= school
 
 all: main.o main.c
-	 $(CC) -c -o main.o main.c
-	 $(CC) -c -o school.o school.c
+	 $(CC) -c -o main.o $(foo2)
+	 $(CC) -c -o school.o $(foo1)
 	 $(CC) $(OBJ) -o $(NAME)
