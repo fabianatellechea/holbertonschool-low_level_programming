@@ -4,7 +4,7 @@ foo := main.o
 foo0 := school.o
 foo1 := school.c
 foo2 := main.c
-OBJ= $(foo:%.o=%.c) $(foo0:%.o=%.c)
+OBJ= $(foo) $(foo0)
 NAME= school
 
 all: main.o main.c
