@@ -11,11 +11,11 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *p;
+	dog_t *p = NULL;
 
 	p = malloc(sizeof(dog_t));
 
-	if (name)
+	if (p && name)
 	{
 		p->name = malloc(sizeof(strlen(name) + 1));
 		strcpy(p->name, name);
